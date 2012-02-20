@@ -1,8 +1,0 @@
-pygments: true
-permalink: /:year/:title
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - config.ru
-  - Rakefile
-  - Guardfile

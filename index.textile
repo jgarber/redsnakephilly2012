@@ -1,7 +1,0 @@
----
-layout: default
-title: RedCloth - RedSnakePhilly 2012
----
-
-Test test
-============
