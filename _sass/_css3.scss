@@ -1,0 +1,38 @@
+@mixin inner_shadow($color, $spread : 5px, $offset_x : 0px, $offset_y : $offset_x) {
+     -moz-box-shadow: inset $offset_x $offset_y $spread $color;
+  -webkit-box-shadow: inset $offset_x $offset_y $spread $color;
+          box-shadow: inset $offset_x $offset_y $spread $color;
+}
+
+
+@mixin drop_shadow($color, $spread : 5px, $offset_x : 0px, $offset_y : $offset_x) {
+     -moz-box-shadow: $offset_x $offset_y $spread $color;
+  -webkit-box-shadow: $offset_x $offset_y $spread $color;
+          box-shadow: $offset_x $offset_y $spread $color;
+}
+
+@mixin linear_gradient($top_color, $bottom_color, $fallback_color: $bottom_color) {
+
+  background-color: $fallback_color;
+  background-image: -moz-linear-gradient(top, $top_color, $bottom_color); 
+  background-image: -o-linear-gradient(top, $top_color, $bottom_color); 
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, $top_color),color-stop(1, $bottom_color)); 
+  background-image: -webkit-linear-gradient($top_color, $bottom_color); 
+  background-image: linear-gradient(top, $top_color, $bottom_color);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$top_color}', EndColorStr='#{$bottom_color}'); 
+  
+}
+
+@mixin border_radius($radius){
+
+     -moz-border-radius: $radius; 
+  -webkit-border-radius: $radius; 
+          border-radius: $radius; 
+}  
+
+@mixin rotate($degrees){
+   -moz-transform: rotate($degrees);  
+     -o-transform: rotate($degrees);  
+-webkit-transform: rotate($degrees);
+}
+
