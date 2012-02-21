@@ -184,14 +184,27 @@
         h3. The bad:
         * Ambiguity - simultaneous states
         * Debugging / Complexity
-        * Leaves out JRuby, Rubinius
+        * Requires compilation
+        * Platform-bound
         * Precompiled gems
         * Few contributors
     #redcloth-treetop.step{data: {x: 4000, y: -50, z: -300, scale: 0.8}}
       %h3 Summer, 2009 RedCloth rewrite in Treetop
       = image_tag 'redcloth-treetop-impact.png'
     #treetop-parser.step.slide{data: {x: 4500, y: -300, z: 200, 'rotate-y' => -90}}
-      Treetop (Packrat)
+      Treetop (PEG)
+      %pre= render 'treetop_code'
+      %p The good: no C or Java!
+    #treetop-con.step.slide{data: {x: 4800, y: -300, z: 200, 'rotate-y' => 90}}
+      :textile
+        h3. The bad:
+        * Slow - automatic AST
+        * Requires compilation
+        * Tough to debug
+        
+        Abandoned the rewrite in September, 2009.
+        
+        Ironically, Gherkin (Cucumber) switched from Treetop to Ragel.
     #redcloth-parslet.step{data: {x: 5800, y: -50, z: -300, scale: 0.8}}
       %h3 RedCloth rewrite in Parslet
       = image_tag 'redcloth-parslet-impact.png'
