@@ -17,7 +17,94 @@
         %a{href: "http://twitter.com/jasongarber"} @jasongarber
       .blog
         %a{href: 'http://jasongarber.com/'} http://jasongarber.com
-    
+  #textile.step.slide{data: {x:0, y:-500}}
+    %pre
+      :preserve
+        h1. Give RedCloth a try!
+
+        A *simple* paragraph with
+        a line break, some _emphasis_ and a "link":http://redcloth.org
+
+        * an item
+        * and another
+
+        # one
+        # two
+        # three
+  #textile-result.step.slide{data: {x:1000, y:-500}}
+    :textile
+      h1. Give RedCloth a try!
+
+      A *simple* paragraph with
+      a line break, some _emphasis_ and a "link":http://redcloth.org
+
+      * an item
+      * and another
+
+      # one
+      # two
+      # three
+  #textile-benefits.step{data: {x: 1000, y:-1500, rotate: 90}}
+    :textile
+      * A “shortcut” to HTML
+      * Quick to type
+      * Easy to remember
+      * Markup for nearly everything in HTML
+  #markdown-textile-comparison.step{data: {x: -200, y:-1500, rotate: 180, scale: 2}}
+    %pre
+      :preserve
+        A First Level Header
+        ====================
+
+        A Second Level Header
+        ---------------------
+
+        ### Header 3
+
+        This is an [example link](http://example.com/).
+
+        Some __bold__ and *italics* text.
+
+        Instantiate with the `new` method
+
+            def initialize(foo)
+                @foo = foo
+            end
+
+        > This is a blockquote. 
+        > You prepend every line with a
+        > greater-than character.
+
+        1. One
+        2. Two (added later)
+        2. Three
+        3. Four
+    %pre
+      :preserve
+        h1. A First Level Header
+
+
+        h2. A Second Level Header
+
+
+        h3. Header 3
+
+        This is an "example link":http://example.com/.
+
+        Some *bold* and _italics_ text.
+
+        Instantiate with the @new@ method
+
+        bc. def initialize(foo)
+          @foo = foo
+        end
+
+        bq. This is a blockquote. You don't have to prepend every line with anything.
+
+        # One
+        # Two (added later)
+        # Three
+        # Four
   .redcloth-timeline
     = image_tag 'redcloth-impact.png'
   #overview.step{data: {scale:10}}  
