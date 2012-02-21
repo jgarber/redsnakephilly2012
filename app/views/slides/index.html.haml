@@ -110,17 +110,62 @@
       #why why@whytheluckystiff.net (115 commits, 19950 additions, 6128 deletions)
       #jgarber jgarber (391 commits, 28518 additions, 22430 deletions)
     = image_tag 'redcloth-impact.png'
-    .event.step{data: {x: -5575, y:350, scale:1, 'rotate-y' => -45}}
-      %h3 15 June 2003
+    #why-starts.event.step{data: {x: -5575, y:350, scale:1, 'rotate-y' => -45}}
+      %h3 15 Jun 2003
       %p Why the Lucky Stiff starts the project
-    .step.slide{data: {x: -5575, y: 1100}}
+      .commit
+        = image_tag 'why.jpg'
+        Initial revision
+        .sha 7b1639cb7f01e51a85808a03e6991e0e895be6fa
+    #regexp-parser.step.slide{data: {x: -5575, y: 1100}}
       Regular expressions
-    .event.top.step{data: {x: -2075, y:200, 'rotate-y' => -10}}
+    #jason-contributes.event.top.step{data: {x: -2075, y:160, 'rotate-y' => -10}}
       %h3 14 Jan 2007
       %p I fix a few bugs
-    .event.step{data: {x: -1795, y:350, z: -100, 'rotate-y' => 5}}
+      .commit
+        = image_tag 'jgarber.jpg'
+        Convert tabs to spaces
+        .sha 48225469f51cecc69b5b247894faac266011cbdd
+    #superredcloth.event.step{data: {x: -1795, y:350, z: -100, 'rotate-y' => 5}}
       %h3 21 Jan 2007
       %p _why starts SuperRedCloth
-    .event.top.step{data: {x: -1295, y:150, z: 400, 'rotate-y' => -15}}
+      .commit
+        = image_tag 'why.jpg'
+        **SUPER RED CLOTH**AYAAYY 
+        .sha b3cb1a703063ce1f49bfd28574fa6c89be1b389f
+    #jason-picks-up-super.event.top.step{data: {x: -1295, y:150, z: 400, 'rotate-y' => -15}}
       %h3 16 Jul 2007
       %p I start hacking on SuperRedCloth
+      .commit
+        = image_tag 'jgarber.jpg'
+        Fixed last character of URL being eaten (#18)
+        .sha 628571321b485fe020ec13263965dac211fbb469
+    #merge-to-trunk.event.step{data: {x: 0, y:350, z: -100, 'rotate-y' => -8}}
+      %h3 17 Mar, 2008
+      .commit
+        = image_tag 'why.jpg'
+        Merge SuperRedCloth to trunk. Brilliant work by Jason Garber!! 
+        .sha 671db45ee687f8ff0bf8e19967592ad51fe85624
+    #ownership.event.top.step{data: {x: 100, y:150, z: 400, scale: 0.8, 'rotate-y' => -10}}
+      %h3 20 Mar, 2008
+      .commit
+        = image_tag 'why.jpg'
+        Transfering copyright and attribution to Jason. Just totally excellent work!
+        .sha f0bfa2eca2978643e0b37153b5567ee7c157747e
+    #summer-2008.top.step{data: {x: 1000, y:240, z:10}}
+      Other contributors!
+    #four-oh.event.step{data: {x: 1600, y:250}}
+      %h3 21 Jul, 2008
+      .commit
+        = image_tag 'jgarber.jpg'
+        Release RedCloth 4.0
+        .sha 25f3bc3b7f4a67c1bc7d5920cdfd6482540a0108
+    #jruby.event.top.step{data: {x: 2400, y:200, 'rotate-x'=> -5, 'rotate-y' => -5}}
+      %h3 22 Oct, 2008
+      .commit
+        = image_tag 'olabini.jpg'
+        Support for JRuby
+    #things-get-messy.step{data: {x: 3000, y:200, scale: 4, 'rotate-y' => -20}}
+    #redcloth-treetop.step{data: {x: 4000, y: -50, z: -300, scale: 0.8}}
+      %h3 RedCloth rewrite in Treetop
+      = image_tag 'redcloth-treetop-impact.png'
