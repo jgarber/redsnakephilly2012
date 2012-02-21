@@ -188,11 +188,13 @@
         * Platform-bound
         * Precompiled gems
         * Few contributors
+        
+        Now in an unmaintainable state!
     #redcloth-treetop.step{data: {x: 4000, y: -50, z: -300, scale: 0.8}}
       %h3 Summer, 2009 RedCloth rewrite in Treetop
       = image_tag 'redcloth-treetop-impact.png'
     #treetop-parser.step.slide{data: {x: 4500, y: -300, z: 200, 'rotate-y' => -90}}
-      Treetop (PEG)
+      Treetop (PEG parser generator)
       %pre= render 'treetop_code'
       %p The good: no C or Java!
     #treetop-con.step.slide{data: {x: 4800, y: -300, z: 200, 'rotate-y' => 90}}
@@ -208,8 +210,31 @@
     #redcloth-parslet.step{data: {x: 5800, y: -50, z: -300, scale: 0.8}}
       %h3 RedCloth rewrite in Parslet
       = image_tag 'redcloth-parslet-impact.png'
-    #parslet-parser.step.slide{data: {x: 6500, y: -600, z: -10, 'rotate-y' => -40}}
-      Parslet (PEG)
+    #parslet-parser.step.slide{data: {x: 6500, y: -600, z: -10, 'rotate-y' => -30}}
+      %h3 Parslet (Parsing Expression Grammar)
+      = image_tag 'parslet-code.png'
+    #parslet-code.step.slide{data: {x: 7400, y: -600, z: -30, 'rotate-y' => 40}}
+      = render 'parslet_code'
+    #parslet-pros.step.slide{data: {x: 8200, y: -600, z: -40, 'rotate-y' => -40}}
+      :textile
+        h3. What I like:
+        
+        * Just Ruby
+        * No compilation
+        * Easy DSL
+        * Only captures what you want
+        ...as PORO!
+        * Easily extensible
+        * I can write granular specs
+        * Awesome error output
+        * It's fast enough
     #conclusion.step.slide{data: {x: 7200, y: 100, z: 200, 'rotate-y' => -50}}
-      The end
+      :textile
+        h3. Expectations for RedCloth 5
+        
+        * More contributors again
+        * Easier bug fixing
+        * Few regressions
+        * Easy to customize the parser
+        * Runs everywhere
   
