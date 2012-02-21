@@ -119,6 +119,7 @@
         .sha 7b1639cb7f01e51a85808a03e6991e0e895be6fa
     #regexp-parser.step.slide{data: {x: -5575, y: 1100}}
       Regular expressions
+      %pre= render 'regexp_code'
     #jason-contributes.event.top.step{data: {x: -2075, y:160, 'rotate-y' => -10}}
       %h3 14 Jan 2007
       %p I fix a few bugs
@@ -133,6 +134,18 @@
         = image_tag 'why.jpg'
         **SUPER RED CLOTH**AYAAYY 
         .sha b3cb1a703063ce1f49bfd28574fa6c89be1b389f
+    #ragel-parser.step.slide{data: {x: -1795, y: 700, z: 500, 'rotate-x' => 90}}
+      %h3 Ragel State Machine Compiler
+      %p
+        = image_tag "ragel-code.png"
+        = image_tag "Ragel_visualisation.png"
+      %small Mongrel • Hpricot • Perian • Gherkin • Lightttpd
+    #ragel-pro.step.slide{data: {x: -795, y: 700, z: 500, 'rotate-x' => 90}}
+      :textile
+        h3. The good:
+        * String manipulation done in C
+        * Wicked fast -- 40x faster!
+        * Fairly readable
     #jason-picks-up-super.event.top.step{data: {x: -1295, y:150, z: 400, 'rotate-y' => -15}}
       %h3 16 Jul 2007
       %p I start hacking on SuperRedCloth
@@ -165,7 +178,15 @@
       .commit
         = image_tag 'olabini.jpg'
         Support for JRuby
-    #things-get-messy.step{data: {x: 3000, y:200, scale: 4, 'rotate-y' => -20}}
+    #things-get-messy.step{data: {x: 3000, y:200, scale: 3.5, 'rotate-y' => -20, 'rotate-x' => 15}}
+    #ragel-con.step.slide{data: {x: 3000, y: 700, z: 1400, 'rotate-z' => 180}}
+      :textile
+        h3. The bad:
+        * Ambiguity - simultaneous states
+        * Debugging / Complexity
+        * Leaves out JRuby, Rubinius
+        * Precompiled gems
+        * Few contributors
     #redcloth-treetop.step{data: {x: 4000, y: -50, z: -300, scale: 0.8}}
       %h3 Summer, 2009 RedCloth rewrite in Treetop
       = image_tag 'redcloth-treetop-impact.png'

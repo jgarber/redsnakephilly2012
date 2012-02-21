@@ -1,0 +1,16 @@
+A_HLGN = /(?:(?:<>|<|>|\=|[()]+)+)/
+A_VLGN = /[\-^~]/
+C_CLAS = '(?:\([^)]+\))'
+C_LNGE = '(?:\[[^\]]+\])'
+C_STYL = '(?:\{[^}]+\})'
+A = "(?:#{A_HLGN}?#{A_VLGN}?|#{A_VLGN}?#{A_HLGN}?)"
+C = "(?:#{C_CLAS}?#{C_STYL}?#{C_LNGE}?|#{C_STYL}?#{C_LNGE}?#{C_CLAS}?|#{C_LNGE}?#{C_STYL}?#{C_CLAS}?)"
+PUNCT = Regexp::quote( '!"#$%&\'*+,-./:;=?@\\^_`|~' )
+PUNCT_NOQ = Regexp::quote( '!"#$&\',./:;=?@\\`|' )
+PUNCT_Q = Regexp::quote( '*-_+^~%' )
+HYPERLINK = '(\S+?)([^\w\s/;=\?]*?)(?=\s|<|$)'
+TABLE_RE = /^(?:caption ?\{(.*?)\}\. ?\n)?^(?:id ?\{(.*?)\}\. ?\n)?^(?:table(_?#{S}#{A}#{C})\. ?\n)?^(#{A}#{C}\.? ?\|.*?\|)(\n\n|\Z)/m
+LISTS_RE = /^([#*_0-9]+?#{C} .*?)$(?![^#*])/m
+LISTS_CONTENT_RE = /^([#*]+)([_0-9]*)(#{A}#{C}) (.*)$/m
+DEFS_RE = /^(-#{C}\s.*?\:\=.*?)$(?![^-])/m
+DEFS_CONTENT_RE = /^(-)(#{A}#{C})\s+(.*?):=(.*)$/m
