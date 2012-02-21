@@ -50,7 +50,7 @@
       * Quick to type
       * Easy to remember
       * Markup for nearly everything in HTML
-  #markdown-textile-comparison.step{data: {x: -200, y:-1500, rotate: 180, scale: 2}}
+  #markdown-textile-comparison.step{data: {x: -200, y:-1500, rotate: 180, scale: 1.6}}
     %pre
       :preserve
         A First Level Header
@@ -106,16 +106,15 @@
         # Three
         # Four
   .redcloth-timeline
+    .contributions
+      #why why@whytheluckystiff.net (115 commits, 19950 additions, 6128 deletions)
+      #jgarber jgarber (365 commits, 28225 additions, 22234 deletions)
     = image_tag 'redcloth-impact.png'
-  #overview.step{data: {scale:10}}  
-  .step{data: {x: -5575, y:150, scale:1}}
-    %h3 15 June 2003
-    %p Why the Lucky Stiff starts the project
-  
-  .step{data: {x: -2075, y:150, scale:1}}
-    %h3 14 Jan 2007
-    %p Jason Garber begins submitting patches
-    
-  .step{data: {x: -2075, y:150, scale:1}}
-    %h3 14 Jan 2007
-    %p Jason Garber begins submitting patches
+    .event.step{data: {x: -5575, y:350, scale:1, 'rotate-y' => -45}}
+      %h3 15 June 2003
+      %p Why the Lucky Stiff starts the project
+    .step.slide{data: {x: -5575, y: 1100}}
+      Regular expressions
+    .event.step{data: {x: -2075, y:350, z: 1000, scale:0.1, 'rotate-y' => 0}}
+      %h3 14 Jan 2007
+      %p I began submitting patches

@@ -6,12 +6,7 @@
 
 body { line-height: 1.2em; }
 
-.redcloth-timeline {
-  position: absolute;
-  left: -6075px;
-}
 .slide { font-size: 44px; line-height: 1.2em; }
-
 
 h2 { font-weight: bold; font-size: 120%; }
 
@@ -41,7 +36,7 @@ h1, h2, h3, p, ul, ol { margin-bottom: 1em; }
     @include text-shadow(4px 4px 2px rgba(10, 10, 10, .45));
   }
   img { width: 300px; height: 300px; border: 10px solid white; position: absolute; top: 160; left: 450px;}
-  .urls { top: 450px; position: absolute; }
+  .urls { top: 400px; position: absolute; }
   .github, .twitter, .blog {
     font-size: 30px;
     float: left;
@@ -64,9 +59,32 @@ h1, h2, h3, p, ul, ol { margin-bottom: 1em; }
   a { color: blue; text-decoration: underline; }
 }
 #markdown-textile-comparison {
-  width: 1000px;
+  width: 1080px;
   background: white;
   padding: 0;
-  font-size: 100%;
-  pre { float: left; width: 450px; height: 500px;}
+  font-size: 130%;
+  pre { float: left; width: 500px; height: 700px;}
+}
+.redcloth-timeline {
+  img {
+    position: absolute;
+    left: -6075px;
+    top: 100px;
+    z-index: -1;
+  }
+  .contributions {
+    position: absolute; left: -6050px; top: 370px; width: 9000px; font-family: 'PT Sans', sans-serif;
+    z-index: 4;
+    div {
+      position: absolute;
+      &:before { content: ""; float: left; height: 1em; width: 1em; margin-right: 5px; }
+    }
+    #why:before { background: #ff7b0d; }
+    #jgarber { left: 3800px; }
+    #jgarber:before { background: #de0000; }
+  }
+  .event {
+    padding-top: 400px;
+    h2, h3, p {margin-bottom: 0.5em;}
+  }
 }
