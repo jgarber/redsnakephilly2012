@@ -1,3 +1,49 @@
 // Place all the styles related to the Slides controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "css3";
+
+body { line-height: 1.2em; }
+
+.redcloth-timeline {
+  position: absolute;
+  left: -6075px;
+}
+
+#title {
+  text-align: center;
+  h1 {
+    margin: 20px 100px; font-size: 60px; line-height: 1.5em; width: 700px; font-weight: bold;
+  }
+}
+
+#about {
+  @include linear_gradient(#222, #fff);
+  background: image-url('bright_red_upholstery_fabric_texture_background_seamless.jpg');
+  color: white;
+  a {
+    color: #444;
+    text-decoration: none;
+    padding: 0.25em 0.5em;
+    background: rgba(255,255,255,0.85);
+  }
+  .name {
+    font-weight: bold; width: 400px; font-size: 80px; line-height: 1.2em; text-align: right; top: 160px; right: 500px; position: absolute;
+    @include text-shadow(4px 4px 2px rgba(10, 10, 10, .45));
+  }
+  img { width: 300px; height: 300px; border: 10px solid white; position: absolute; top: 160; left: 450px;}
+  .urls { top: 450px; position: absolute; }
+  .github, .twitter, .blog {
+    float: left;
+    margin: 0 50px;
+    padding: 40px;
+    padding-left: 110px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+  }
+  .github { background-image: image-url('octocat.png'); }
+  .twitter { background-image: image-url('twitter.png'); }
+  .blog { background-image: image-url('jg-bird.png'); margin-left: 180px; }
+}

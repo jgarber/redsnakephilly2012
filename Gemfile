@@ -20,7 +20,6 @@ end
 gem 'jquery-rails'
 
 group :development do
-  gem 'guard-livereload'
   gem 'guard-bundler'
   gem 'guard-pow'
   gem 'powder'

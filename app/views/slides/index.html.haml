@@ -3,8 +3,32 @@
     %p Your browser doesn't support the features required by impress.js, so you are presented with a simplified version of this presentation.
     %p For the best experience please use the latest Chrome, Safari or Firefox browser. Upcoming version 10 of Internet Explorer should also handle it.
   
-  #bored.step.slide{data: {x: "-1000", y: "-1500"}}
-    Aren't you bored with all those slide-based presentations!!!!?
+  #title.step.slide{data: {x: -1000, y: -500}}
+    %h1 What goes on under the Red Cloth?
+    = image_tag 'footsie.jpg'
     
-  .step.slide{data: {x:0, y:-1500}}
-    Another slide
+  #about.step.slide{data: {x:-1000, y:-500, z: -1, 'rotate-x' => -180}}
+    .name Jason Garber
+    = image_tag 'JasonGarber.jpg'
+    .urls
+      .github
+        %a{href: "https://github.com/jgarber"} jgarber
+      .twitter
+        %a{href: "http://twitter.com/jasongarber"} @jasongarber
+      .blog
+        %a{href: 'http://jasongarber.com/'} http://jasongarber.com
+    
+  .redcloth-timeline
+    = image_tag 'redcloth-impact.png'
+  #overview.step{data: {scale:10}}  
+  .step{data: {x: -5575, y:150, scale:1}}
+    %h3 15 June 2003
+    %p Why the Lucky Stiff starts the project
+  
+  .step{data: {x: -2075, y:150, scale:1}}
+    %h3 14 Jan 2007
+    %p Jason Garber begins submitting patches
+    
+  .step{data: {x: -2075, y:150, scale:1}}
+    %h3 14 Jan 2007
+    %p Jason Garber begins submitting patches
