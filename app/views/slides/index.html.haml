@@ -3,11 +3,11 @@
     %p Your browser doesn't support the features required by impress.js, so you are presented with a simplified version of this presentation.
     %p For the best experience please use the latest Chrome, Safari or Firefox browser. Upcoming version 10 of Internet Explorer should also handle it.
   
-  #title.step.slide{data: {x: -1000, y: -500}}
+  #title.step.slide{data: {x: -1000, y: -1500}}
     %h1 What goes on under the Red Cloth?
     = image_tag 'footsie.jpg'
     
-  #about.step.slide{data: {x:-1000, y:-500, z: -1, 'rotate-x' => -180}}
+  #about.step.slide{data: {x:-1000, y:-1500, z: -1, 'rotate-x' => -180}}
     .name Jason Garber
     = image_tag 'JasonGarber.jpg'
     .urls
@@ -17,7 +17,7 @@
         %a{href: "http://twitter.com/jasongarber"} @jasongarber
       .blog
         %a{href: 'http://jasongarber.com/'} http://jasongarber.com
-  #textile.step.slide{data: {x:0, y:-500}}
+  #textile.step.slide{data: {x:0, y:-1500, 'rotate-x' => -180}}
     %pre
       :preserve
         h1. Give RedCloth a try!
@@ -31,7 +31,7 @@
         # one
         # two
         # three
-  #textile-result.step.slide{data: {x:1000, y:-500}}
+  #textile-result.step.slide{data: {x:1000, y:-1500}}
     :textile
       h1. Give RedCloth a try!
 
@@ -44,13 +44,13 @@
       # one
       # two
       # three
-  #textile-benefits.step{data: {x: 1000, y:-1500, rotate: 90}}
+  #textile-benefits.step{data: {x: 1000, y:-2500, rotate: 90}}
     :textile
       * A “shortcut” to HTML
       * Quick to type
       * Easy to remember
       * Markup for nearly everything in HTML
-  #markdown-textile-comparison.step{data: {x: -200, y:-1500, rotate: 180, scale: 1.6}}
+  #markdown-textile-comparison.step{data: {x: -200, y:-2500, rotate: 180, scale: 1.6}}
     %pre
       :preserve
         A First Level Header
@@ -108,13 +108,19 @@
   .redcloth-timeline
     .contributions
       #why why@whytheluckystiff.net (115 commits, 19950 additions, 6128 deletions)
-      #jgarber jgarber (365 commits, 28225 additions, 22234 deletions)
+      #jgarber jgarber (391 commits, 28518 additions, 22430 deletions)
     = image_tag 'redcloth-impact.png'
     .event.step{data: {x: -5575, y:350, scale:1, 'rotate-y' => -45}}
       %h3 15 June 2003
       %p Why the Lucky Stiff starts the project
     .step.slide{data: {x: -5575, y: 1100}}
       Regular expressions
-    .event.step{data: {x: -2075, y:350, z: 1000, scale:0.1, 'rotate-y' => 0}}
+    .event.top.step{data: {x: -2075, y:200, 'rotate-y' => -10}}
       %h3 14 Jan 2007
-      %p I began submitting patches
+      %p I fix a few bugs
+    .event.step{data: {x: -1795, y:350, z: -100, 'rotate-y' => 5}}
+      %h3 21 Jan 2007
+      %p _why starts SuperRedCloth
+    .event.top.step{data: {x: -1295, y:150, z: 400, 'rotate-y' => -15}}
+      %h3 16 Jul 2007
+      %p I start hacking on SuperRedCloth

@@ -74,17 +74,19 @@ h1, h2, h3, p, ul, ol { margin-bottom: 1em; }
   }
   .contributions {
     position: absolute; left: -6050px; top: 370px; width: 9000px; font-family: 'PT Sans', sans-serif;
+    font-size: 200%;
     z-index: 4;
     div {
       position: absolute;
       &:before { content: ""; float: left; height: 1em; width: 1em; margin-right: 5px; }
     }
     #why:before { background: #ff7b0d; }
-    #jgarber { left: 3800px; }
+    #jgarber { left: 3700px; }
     #jgarber:before { background: #de0000; }
   }
   .event {
     padding-top: 400px;
     h2, h3, p {margin-bottom: 0.5em;}
+    &.top { padding-top: 0; padding-bottom: 400px;}
   }
 }
