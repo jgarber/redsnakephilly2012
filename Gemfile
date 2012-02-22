@@ -23,6 +23,7 @@ group :development do
   gem 'guard-bundler'
   gem 'guard-pow'
   gem 'powder'
+  gem 'heroku'
 end
 
 # To use ActiveModel has_secure_password
